@@ -1,0 +1,108 @@
+<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>animate</title>
+	<script type="text/javascript" src="js/main.js"></script>
+	<style>
+		.container {
+			margin: 50px;
+			width: 200px;
+		}
+		#accordion p {
+			background: green;
+		}
+		#accordion li {
+			border-top: 1px solid red;
+			list-style: none;
+			padding: 3px 0;
+		}
+		#accordion ul {
+			/*display: none;*/
+		}
+		#accordion p {
+			cursor: pointer;
+		}
+		.list-container {
+			overflow: hidden;
+			height: 0;
+		}
+		.box{
+			width:150px;
+			height:150px;
+			background:#f00;
+			border: 1px solid #000;
+		}
+		.btn{
+			font-size:20px;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="box"></div>
+	<a href="#" class="start btn" class="">start</a>
+	<a href="#" class="stop btn" class="">stop</a>
+</div>
+
+<div class="container">
+	<ul id="accordion">
+		<li>
+			<p>Item 01</p>
+			<div class="list-container">
+				<ul class="dropdown">
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+			</ul>
+			</div>
+		</li>
+		<li>
+			<p>Item 02</p>
+			<div class="list-container">
+				<ul class="dropdown">
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+			</ul>
+			</div>
+		</li>
+		<li>
+			<p>Item 03</p>
+			<div class="list-container">
+				<ul class="dropdown">
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+			</ul>
+			</div>
+		</li>
+		<li>
+			<p>Item 04</p>
+			<div class="list-container">
+				<ul class="dropdown">
+					<li>sub-item</li>
+					<li>sub-item</li>
+					<li>sub-item</li>
+			</ul>
+			</div>
+		</li>
+		<li>
+			<p>Item 05</p>
+			<div class="list-container">
+				<ul class="dropdown">
+					<li>sub-item</li>
+			</div>
+		</li>
+	</ul>
+</div>
+</body>
+</head>
+</html>

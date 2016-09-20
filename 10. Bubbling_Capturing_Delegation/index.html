@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Bubbling, Capturing</title>
+</head>
+<body>
+
+  <a href = "/" onclick="return false">Link</a>
+
+  <form onclick="clickHandler(event, this)">FORM
+    <div onclick="clickHandler(event, this)">DIV
+      <p onclick="clickHandler(event, this)">P</p>
+    </div>
+  </form>
+
+  <script>
+    var elems = document.querySelectorAll('form,div,p');
+
+    function clickHandler(event, el) {
+      alert("this = " + el.tagName + ";" + "target = " + event.target.tagName);
+    };
+
+    for (var i = 0; i < elems.length; i++) {
+      elems[i].addEventListener("contextmenu", highlightThis, true);
+    }
+
+    function highlightThis(e) {
+      alert(this.tagName);
+    }
+  </script>
+</body>
+</html>

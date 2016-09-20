@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Bubbling, Capturing</title>
+</head>
+<body>
+  <!-- Mouse, KeyBoard, Scroll, Script -->
+  <div onclick="handler(event)">DIV</div>
+  <input onkeypress="handler(event)" type="text">
+
+  <script>
+    var div = document.querySelectorAll("div");
+
+    function handler(event) {
+      console.dir(event);
+    };
+
+  </script>
+</body>
+</html>

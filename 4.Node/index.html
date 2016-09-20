@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Node</title>
+</head>
+<body>
+  <div>Some DIV element</div>
+  <!-- comment -->
+  <script>
+  // nodeType, tagName, innerHTML, outerHTML, textContent, data, hidden
+
+    var body = document.body;
+    var comment = document.body.childNodes[3];
+    var div = document.querySelector('div');
+    var bodyText = document.querySelector('div').childNodes[0];
+
+    console.dir(body);
+    console.dir(div);
+    console.dir(comment);
+    console.dir(bodyText);
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"  >
+    <link rel="stylesheet" href="css/main.css">
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row text-center"><h1><a href="#" class="logo ">Supper SITE</a></h1></div>
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="#">Кредит</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!--main block-->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <form class="col-xs-12 form">
+                    <!--<div class="row">-->
+                        <h2 class="col-xs-12 text-center form-title">Оформление заказа</h2>
+                        <div class="form-group col-xs-12 col-sm-6 col-md-4">
+                            <label for="input-first-name">First Name</label>
+                            <input type="text" class="form-control" id="input-first-name" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6 col-md-4">
+                            <label for="input-last-name">Last Name</label>
+                            <input type="text" class="form-control" id="input-last-name" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12 col-md-4">
+                            <label for="input-email">Email address</label>
+                            <input type="email" class="form-control" id="input-email" placeholder="Enter Email">
+                        </div>
+
+                        <div class="form-group col-xs-12 col-sm-12 col-md-4">
+                            <label for="input-city">City</label>
+                            <input type="text" class="form-control" id="input-city" placeholder="Enter City">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6 col-md-4">
+                            <label for="input-delivery_service">Delivery Service</label>
+                            <input type="text" class="form-control" id="input-delivery_service" placeholder="Enter Delivery Service">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6 col-md-4">
+                            <label for="input-stock">Stock</label>
+                            <input type="text" class="form-control" id="input-stock" placeholder="Enter Number of Stock">
+                        </div>
+                        <div class="checkbox text-center form-checkbox">
+                            <label>
+                                <input name="agree" type="checkbox">Agree with rules
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    <!--</div>-->
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--footer block-->
+    <footer class="footer panel panel-footer"></footer>
+    <script>
+    // Examples
+      var delivery = document.getElementById("input-delivery_service");
+      var queryDelivery = document.querySelector("#input-delivery_service");
+
+      var rows = document.getElementsByClassName("row");
+      var queryRows = document.querySelectorAll(".row");
+
+      var divs = document.getElementsByTagName("div");
+      // ?
+
+    // Task
+      var email;
+      var checkbox;
+      var labelCity;
+      var submit;
+      var lastInput;
+      var logoLink;
+      var spans;
+    </script>
+</body>
+</html>
