@@ -5,7 +5,8 @@
   */
   var createWidthAnimation = function(finalWidth, elem) {
     var expose = {};
-    var width = parseInt(getComputedStyle(elem).width);
+    var initialWidth = parseInt(getComputedStyle(elem).width);
+    var width = initialWidth;
     var interval;
 
     var animationStep = function() {
@@ -18,7 +19,7 @@
     }
 
     expose.reset = function() {
-      width = 150;
+      width = initialWidth;
       elem.style.width = width + 'px';
       clearInterval(interval);
     }
@@ -52,7 +53,6 @@
 
   var start = function(ev) {
     ev.preventDefault();
-    console.log('start');
 
     if (!isPlaying) {
       animation.start();
@@ -87,7 +87,7 @@
   var previousOpened = null;
 
   var toggleSubmenu = function(ev) {
-    ev.preventDeafault();
+    ev.preventDefault();
 
     var targetMenuItem;
     var menuItems = Object.keys(accordion.children)
