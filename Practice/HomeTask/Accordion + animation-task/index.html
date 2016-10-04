@@ -17,7 +17,7 @@
 			padding: 3px 0;
 		}
 		#accordion ul {
-			/*display: none;*/
+			display: block;
 		}
 		#accordion p {
 			cursor: pointer;
@@ -25,6 +25,12 @@
 		.list-container {
 			overflow: hidden;
 			height: 0;
+		}
+		#accordion li:focus{
+			outline: none;
+		}
+		.show{
+			height:auto;
 		}
 		.box{
 			width:150px;
@@ -48,7 +54,7 @@
 
 <div class="container">
 	<ul id="accordion">
-		<li>
+		<li tabindex="1">
 			<p>Item 01</p>
 			<div class="list-container">
 				<ul class="dropdown">
@@ -60,7 +66,7 @@
 			</ul>
 			</div>
 		</li>
-		<li>
+		<li tabindex="1">
 			<p>Item 02</p>
 			<div class="list-container">
 				<ul class="dropdown">
@@ -72,7 +78,7 @@
 			</ul>
 			</div>
 		</li>
-		<li>
+		<li tabindex="1">
 			<p>Item 03</p>
 			<div class="list-container">
 				<ul class="dropdown">
@@ -84,7 +90,7 @@
 			</ul>
 			</div>
 		</li>
-		<li>
+		<li tabindex="1">
 			<p>Item 04</p>
 			<div class="list-container">
 				<ul class="dropdown">
@@ -94,7 +100,7 @@
 			</ul>
 			</div>
 		</li>
-		<li>
+		<li tabindex="1">
 			<p>Item 05</p>
 			<div class="list-container">
 				<ul class="dropdown">
