@@ -12,7 +12,7 @@ ball.onmousedown = function(e) {
   this.style.position = 'absolute';
   moveAt(e);
 
-  document.body.appendChild(this);
+  //document.body.appendChild(this);
 
   this.style.zIndex = 1000;
 
@@ -21,12 +21,12 @@ ball.onmousedown = function(e) {
     self.style.top = e.pageY - shiftY+ 'px';
   };
 
-  document.addEventListener('mousemove', function(e){
-    moveAt(e);
-  });
+  document.addEventListener('mousemove', moveAt);
+
 
   this.onmouseup = function() {
-    document.onmousemove = self.onmouseup = null;
+    document.removeEventListener('mousemove', moveAt);
+    self.onmouseup = null;
   };
 };
 
